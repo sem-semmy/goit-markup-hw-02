@@ -52,7 +52,7 @@ ul {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -60,15 +60,21 @@ ul {
 .logo-white {
   color: var(--white);
 }
-
+.header {
+  background-color: #ececec;
+}
 .nav-link,
 .contact-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.15;
   letter-spacing: 0.02em;
   color: var(--additional-text-color);
 }
+.active {
+  color: var(--accent-color);
+}
+
 .nav-link:hover,
 .nav-link:focus,
 .contact-link:hover,
@@ -82,6 +88,14 @@ ul {
   border: none;
   background-color: #f5f4fa;
   color: #000000;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 6px 22px;
+}
+.filter-btn-active {
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--white);
   border-radius: 4px;
   font-size: 16px;
   padding: 6px 22px;
@@ -117,17 +131,19 @@ ul {
   letter-spacing: 0.03em;
   color: var(--additional-text-color);
 }
-/* .button {
+.button {
+  background-color: var(--accent-color);
+  color: var(--white);
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 188% */
-/* display: flex; */
-/* align-items: center;
-  text-align: center; */
-/* letter-spacing: 0.06em; */
-/* color: var(--white); */
-/* } */
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+}
 .benefits-list .title {
   font-weight: 700;
   font-size: 14px;
@@ -201,9 +217,14 @@ ul {
   font-style: normal;
 }
 .link-transparency {
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.6);
 }
+/* opacity: 0.6; */
+
 .footer {
   background-color: #2f303a;
   text-decoration: none;
+}
+.no-display {
+  display: none;
 }
